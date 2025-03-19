@@ -1,17 +1,23 @@
 {
+  "homepage": "https://anagh555i.github.io/CP_Dash_NITC/",
   "name": "cp-dash-nitc",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-cookie": "^8.0.1",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
